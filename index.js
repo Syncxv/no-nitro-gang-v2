@@ -149,7 +149,6 @@ module.exports = class ImgCmd extends (
   //const win = await popout
 
   pluginWillUnload() {
-    uninject("bot-reply-button");
     powercord.api.commands.unregisterCommand("spotify");
     powercord.api.commands.unregisterCommand("tkinfo");
     powercord.api.commands.unregisterCommand('tklogin');
