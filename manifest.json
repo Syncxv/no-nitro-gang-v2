@@ -1,0 +1,8 @@
+{
+  "name": "send images with command",
+  "version": "1.0.0",
+  "description": "send images",
+  "author": "Aria#8171 (549244932213309442)",
+  "license": "MIT",
+  "shorthand": "img-sender"
+}
