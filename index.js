@@ -74,7 +74,12 @@ module.exports = class ImgCmd extends Plugin {
         
       }
     });
-
+    powercord.api.command.registerCommand({
+      command: "REAL-spotif",
+      aliases: ['spot', 'sp'],
+      description: "hehe SPTOIFY PREMIUM",
+      executor: () => require('powercord/webpack').getModule(['getActiveSocketAndDevice'],false).getActiveSocketAndDevice().socket.isPremium = true
+    })
   }
 
 
