@@ -74,7 +74,7 @@ module.exports = class ImgCmd extends Plugin {
         
       }
     });
-    powercord.api.command.registerCommand({
+    powercord.api.commands.registerCommand({
       command: "spotify2",
       aliases: ['spot', 'sp'],
       useage: "{c}",
