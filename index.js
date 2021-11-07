@@ -75,8 +75,9 @@ module.exports = class ImgCmd extends Plugin {
       }
     });
     powercord.api.command.registerCommand({
-      command: "REAL-spotif",
+      command: "spotify2",
       aliases: ['spot', 'sp'],
+      useage: "{c}",
       description: "hehe SPTOIFY PREMIUM",
       executor: () => require('powercord/webpack').getModule(['getActiveSocketAndDevice'],false).getActiveSocketAndDevice().socket.isPremium = true
     })
@@ -86,5 +87,6 @@ module.exports = class ImgCmd extends Plugin {
   pluginWillUnload() {
     powercord.api.commands.unregisterCommand('upload');
     powercord.api.commands.unregisterCommand('memes');
+    powercord.api.commands.unregisterCommand('spotify2');
   }
 };
