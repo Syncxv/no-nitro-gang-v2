@@ -22,7 +22,7 @@ module.exports = class ImgCmd extends Plugin {
     messages.sendMessage = (sendMessage => async(id, message, ...params) => {
       console.log(message)
       if (message.content.startsWith('<:') || message.content.startsWith('<a:')) {
-          message.content = `${message.validNonShortcutEmojis[0].url.replace('?size=40', '?size=64')}`
+          message.content = `${message.validNonShortcutEmojis[0].url.replace('?size=48', '?size=64')}`
       }
       return sendMessage(id, message, ...params).catch(() => void 0);
     })(this.oldSendMessages = messages.sendMessage)
