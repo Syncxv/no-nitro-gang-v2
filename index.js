@@ -36,7 +36,7 @@ module.exports = class ImgCmd extends Plugin {
       usage: "{c} <name> <link>",
       executor: (args) => {
         if (!args[0]) return{result: "hey dude its like `.upload <name> <link>`"}
-        if (!args[1]) return{result: "you forgot the link"}
+        if (!args[1]) return{result: "you forgot the link heheha"}
         saveimages(args[0], args[1])
         return {
           send: false,
