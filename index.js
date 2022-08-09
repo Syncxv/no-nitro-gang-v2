@@ -89,7 +89,7 @@ module.exports = class ImgCmd extends Plugin {
       command: "spotify2",
       aliases: ['spot', 'sp'],
       useage: "{c}",
-      description: "hehe SPTOIFY PREMIUM",
+      description: "hehe SPOTIFY PREMIUM",
       executor: () => require('powercord/webpack').getModule(['getActiveSocketAndDevice'],false).getActiveSocketAndDevice().socket.isPremium = true
     })
   }
